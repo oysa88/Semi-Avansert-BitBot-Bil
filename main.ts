@@ -40,14 +40,14 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 radio.onReceivedValue(function (name, value) {
-    if (name == "H") {
-        Kjør = value
+    if (name == "P") {
+        PåAv_Bil = value
     } else if (name == "A") {
         Venstre = value
     } else if (name == "B") {
         Høyre = value
-    } else if (name == "P") {
-        PåAv_Bil = value * -22.5
+    } else if (name == "H") {
+        Kjør = value * -22.5
     }
 })
 let Kjør = 0
@@ -58,8 +58,8 @@ let PåAv = 0
 let Knapp_B = 0
 let Knapp_A = 0
 let Hastighet = 0
-let Radiogruppe = 0
 let Stopp = 0
+let Radiogruppe = 42
 Stopp = 0
 radio.setGroup(Radiogruppe)
 bitbot.ledRainbow()
